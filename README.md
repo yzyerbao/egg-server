@@ -29,5 +29,7 @@ $ npm stop
 - Use `npm test` to run unit test.
 - Use `npm run autod` to auto detect dependencies upgrade, see [autod](https://www.npmjs.com/package/autod) for more detail.
 
+### swagger document
+ - http://localhost:7001/swagger-ui.html
 
 [egg]: https://eggjs.org
