@@ -22,11 +22,10 @@ class UserAccessService extends Service {
         const {ctx, service} = this
         // ctx.state.user 可以提取到JWT编码的data
         const _id = ctx.state.user.data._id
-        const user = await service.user.find(_id)
+        const user = await service.user.show(_id)
         if (!user) {
             ctx.throw(404, 'user is not found')
         }
-        user.password = 'How old are you?'
         return user
     }
 }
